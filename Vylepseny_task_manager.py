@@ -46,7 +46,7 @@ def zobrazit_vsechny_ukoly(connection,test_mode=False):
         print ("Žádný úkol není k dispozici.")
 
     for ukol in ukolyDb:
-        stav = "🟡" if ukol[3] == "Probíhá" else "🔴" if ukol[3] == "Nezahájeno" else "✅"
+        stav = "🟡" if ukol[3] == "probíhá" else "🔴" if ukol[3] == "nezahájeno" else "✅"
         print(f"ID:{ukol[0]} {stav}{ukol[3]} {ukol[1]} - {ukol[2]}")
         
 
